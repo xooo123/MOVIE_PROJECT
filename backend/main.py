@@ -15,7 +15,7 @@ model_path = BASE_DIR / "models" / "model.pkl"
 model = joblib.load(model_path)
 
 # Read the TMDB key from the environment (set in docker-compose / .env).
-TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "b96461ea6764277abd5cdee6d05bc204")
+TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "")
 
 columns_genre = [
     'Action', 'Adult', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Crime',
