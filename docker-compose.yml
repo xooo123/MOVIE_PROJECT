@@ -1,0 +1,23 @@
+services:
+  frontend:
+    build: ./app
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    # Live-edit during development: changes to these files show up on a
+    # browser refresh, no rebuild needed. Safe to remove for production.
+    volumes:
+      - ./app/static:/usr/share/nginx/html:ro
+      - ./app/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+
+  backend:
+    build: ./backend
+    # No host port needed: nginx reaches it over the internal network as
+    # http://backend:8000. Uncomment below to also hit the API directly.
+    # ports:
+    #   - "8000:8000"
+    expose:
+      - "8000"
+    environment:
+      - TMDB_API_KEY=${TMDB_API_KEY}

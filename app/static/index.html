@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CINEMAI — Know Before You Watch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="atmos">
+  <div class="ambient"></div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+</div>
+
+<div class="shell">
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="brand" href="#">
+    <svg class="mark" width="34" height="34" viewBox="0 0 48 48" fill="none">
+      <circle cx="24" cy="24" r="21" stroke="#e50914" stroke-width="2.5"/>
+      <g class="iris">
+        <path d="M24 6 L31 19 L17 19 Z" fill="#e50914" opacity=".95"/>
+        <path d="M42 24 L29 31 L29 17 Z" fill="#e50914" opacity=".75"/>
+        <path d="M24 42 L17 29 L31 29 Z" fill="#e50914" opacity=".55"/>
+        <path d="M6 24 L19 17 L19 31 Z" fill="#e50914" opacity=".8"/>
+      </g>
+      <circle cx="24" cy="24" r="5.5" fill="#fff"/>
+    </svg>
+    <span class="word">CINEM<b>AI</b></span>
+  </a>
+  <div class="nav-links">
+    <a href="/trending">Trending</a>
+    <a href="/predictor">Predictor</a>
+    <a href="/predictor">Get Started</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="badge"><span class="dot"></span>AI-Powered Movie Intelligence</span>
+    <h1>Know if a film<br>is <span class="worth">worth it.</span></h1>
+    <p class="lede">Predict a movie's rating with AI <em>before</em> you spend two hours of your life on it. The whole theater, read in a glance.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/predictor">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Find Out Before You Watch
+      </a>
+      <a class="btn btn-ghost" href="/trending">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        What Everyone's Watching
+      </a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">28<span class="accent">+</span></div><div class="l">Genres</div></div>
+      <div class="stat"><div class="n"><span class="accent">AI</span></div><div class="l">Powered</div></div>
+      <div class="stat"><div class="n">Live</div><div class="l">TMDB Data</div></div>
+    </div>
+  </div>
+
+  <!-- STAGE -->
+  <div class="stage" id="stage">
+    <!-- AI SCORE METER (wow) -->
+    <div class="score" id="score" data-target="91">
+      <div class="ring"></div>
+      <svg viewBox="0 0 190 190">
+        <defs>
+          <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff6068"/><stop offset="1" stop-color="#e50914"/>
+          </linearGradient>
+        </defs>
+        <circle class="track" cx="95" cy="95" r="85"/>
+        <circle class="bar" id="bar" cx="95" cy="95" r="85"/>
+      </svg>
+      <div class="center">
+        <div class="num"><span id="num">0</span><span class="pct">%</span></div>
+        <div class="cap">AI Verdict</div>
+        <div class="verdict">★ Worth It</div>
+      </div>
+    </div>
+
+    <!-- POSTERS -->
+   <div class="poster p1" data-depth="26"><div class="art art-1"></div><img class="art" src="/sci-fiction-pos.jpg" alt="Event Horizon poster" onerror="this.style.display='none'"><div class="glass"></div><div class="sheen"></div><span class="tag">94% AI</span><div class="meta"><div class="yr">2024 · Sci-Fi</div><div class="ttl">Event Horizon</div><div class="stars">★★★★★</div></div></div>
+    <div class="poster p2" data-depth="40"><div class="art art-2"></div><img class="art" src="/thriller-pos.jpg" alt="The Quiet Hour poster" onerror="this.style.display='none'"><div class="glass"></div><div class="sheen"></div><span class="tag">88% AI</span><div class="meta"><div class="yr">2024 · Thriller</div><div class="ttl">The Quiet Hour</div><div class="stars">★★★★☆</div></div></div>
+    <div class="poster p3" data-depth="18"><div class="art art-3"></div><img class="art" src="/drama-pos.jpg" alt="After the Rain poster" onerror="this.style.display='none'"><div class="glass"></div><div class="sheen"></div><span class="tag">96% AI</span><div class="meta"><div class="yr">2024 · Drama</div><div class="ttl">After the Rain</div><div class="stars">★★★★★</div></div></div>
+    <div class="poster p4" data-depth="52"><div class="art art-4"></div><img class="art" src="/action-pos.jpg" alt="Redline poster" onerror="this.style.display='none'"><div class="glass"></div><div class="sheen"></div><span class="tag">71% AI</span><div class="meta"><div class="yr">2024 · Action</div><div class="ttl">Redline</div><div class="stars">★★★☆☆</div></div></div>
+  </div>
+
+  <div class="scroll-hint"><div class="line"></div><span>Scroll</span></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <p class="eyebrow">What we offer</p>
+  <h2 class="h2">Two powerful tools, <span class="serif">one verdict</span></h2>
+  <div class="grid">
+    <div class="card"><div class="ico"></div><h3>Movie Predictor</h3><p>Enter genre, votes, and crew scores — our ML model tells you if it's a hit or a miss before you waste your evening.</p><a class="more" href="/predictor">Try Predictor →</a></div>
+    <div class="card"><div class="ico"></div><h3>Trending Movies</h3><p>Real-time trending films from TMDB, updated daily. Discover what the world is watching right now, ranked by signal.</p><a class="more" href="/trending">See Trending →</a></div>
+    <div class="card"><div class="ico"></div><h3>Instant Results</h3><p>No waiting, no signups. Fill in the details and get your prediction in milliseconds, powered by a trained ML model.</p></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <h2>Ready to <span class="worth">predict?</span></h2>
+  <p>Stop guessing. Start knowing.</p>
+  <a class="btn btn-primary" href="#" style="display:inline-flex">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    Find Out Before You Watch
+  </a>
+</section>
+
+<footer class="footer">
+  <span class="word">CINEM<b>AI</b></span>
+  <span>Powered by TMDB &amp; Machine Learning</span>
+</footer>
+
+</div><!-- /shell -->
+
+<script src="script.js"></script>
+</body>
+</html>

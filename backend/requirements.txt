@@ -1,0 +1,9 @@
+pandas
+matplotlib
+numpy
+seaborn 
+scikit-learn==1.7.2
+joblib
+fastapi
+uvicorn
+requests

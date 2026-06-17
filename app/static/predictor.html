@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>MOVIE PREDICTOR</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="nav-links">
+    </div>
+
+    <div class="container">
+
+        <select id="genre">
+        <option value="">Select Genre</option>
+        <option>Action</option>
+        <option>Adult</option>
+        <option>Adventure</option>
+        <option>Animation</option>
+        <option>Biography</option>
+        <option>Comedy</option>
+        <option>Crime</option>
+        <option>Documentary</option>
+        <option>Drama</option>
+        <option>Family</option>
+        <option>Fantasy</option>
+        <option>Film-Noir</option>
+        <option>Game-Show</option>
+        <option>History</option>
+        <option>Horror</option>
+        <option>Music</option>
+        <option>Musical</option>
+        <option>Mystery</option>
+        <option>News</option>
+        <option>Reality-TV</option>
+        <option>Romance</option>
+        <option>Sci-Fi</option>
+        <option>Short</option>
+        <option>Sport</option>
+        <option>Talk-Show</option>
+        <option>Thriller</option>
+        <option>War</option>
+        <option>Western</option>
+    </select>
+
+        <input id="votes" type="number" placeholder="Votes">
+        <p id="votesError" class="errors"></p>
+        <input id="actor" type="number" placeholder="Actor Score (0 - 10)">
+        <p id="actorError" class="errors"></p>
+        <input id="writer" type="number" placeholder="Writer Score (0 - 10)">
+        <p id="writerError" class="errors"></p>
+        <input id="director" type="number" placeholder="Director Score (0 - 10)">
+        <p id="directorError" class="errors"></p>
+
+
+        <button class="predict-button" onclick="predictMovie()">Predict</button>
+
+        <h2 id="result"></h2>
+        <p id="output" class="errors"></p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
