@@ -57,8 +57,7 @@ movie_project/
 │       ├── preprocessor.py   # Data cleaning & feature engineering
 │       └── train.py          # Model training script
 │
-├── dataset/                  # IMDb .tsv datasets (not committed)
-├── notebooks/                # Exploratory training notebook
+├── dataset/                  # IMDb .tsv datasets (not committed)               # Exploratory training notebook
 ├── output/                   # Model evaluation plots
 ├── docker-compose.yml
 └── .env                      # TMDB_API_KEY (not committed)
