@@ -1,4 +1,4 @@
-# 🎬 CINEMAI — Know Before You Watch
+# 🎬 CINEMAI
 
 CINEMAI is a machine-learning web app that predicts whether a movie is likely to be **good or bad** before you watch it, and shows the films **trending right now** from TMDB.
 
